@@ -1,3 +1,13 @@
 # how to add user in ubuntu
 
       sudo adduser pandi 
+      
+      
+# remove user 
+
+    sudo deluser pandi
+
+
+
+
+
