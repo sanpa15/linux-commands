@@ -1,3 +1,7 @@
+# Present working directory
+
+     pwd
+
 #  Show the current date and time
 
        date 
