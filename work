@@ -1,3 +1,84 @@
-# how to add user in ubuntu
+#  Show the current date and time
+
+       date 
+#  Show this month's calendar
+
+       cal
+#  Display who is online
+
+        w      
+      
+      
+ #  Who you are logged in as
+ 
+       whoami      
+       
+       
+ #  how to add user in ubuntu
 
       sudo adduser pandi 
+      
+ #  Display Linux system information
+ 
+         uname -a
+
+ #  Display kernel release information
+ 
+         uname -r
+
+      
+#  show wich version released in ubuntu
+
+        lsb_release -a
+        
+ #  Show system host name
+ 
+        hostname       
+        
+  
+ #  Display all local IP addresses of the host.
+ 
+       hostname - I    
+       
+       
+  #  Show system reboot history 
+  
+        last reboot  
+        
+            
+  #  Display CPU information
+  
+        cat /proc/cpuinfo       
+        
+  #  Display memory information
+  
+         cat /proc/meminfo  
+         
+  #  Display free and used memory ( -h for human readable, -m for MB, -g for GB.)
+  
+         free -h    
+         
+  #  Display PCI devices
+  
+          lspci -tv   
+          
+  #  Display USB devices
+  
+          lsusb -tv   
+          
+  #  Display DMI/SMBIOS (hardware info) from the BIOS
+  
+           dmidecode  
+           
+  #  Show info about disk sda
+  
+             hdparm -i /dev/sda 
+             
+    
+  #  Perform a read speed test on disk sda
+  
+             hdparm -tT /dev/sda   
+             
+  #  Display and manage the top processes
+  
+              top         
