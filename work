@@ -83,6 +83,16 @@
   
              hdparm -tT /dev/sda   
              
-  #  Display and manage the top processes
+  #  Display and manage the top processes 
   
               top         
+              
+              
+  # how to switch the one user to another user
+  
+  
+        su - username
+        
+  # how to give sudo rights privilages on new user
+  
+         usermod -aG sudo username
