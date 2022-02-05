@@ -22,6 +22,10 @@
 
       sudo adduser pandi 
       
+ # Find your linux os name and release number in ubuntu
+ 
+    cat/etc/*release
+      
  #  Display Linux system information
  
          uname -a
