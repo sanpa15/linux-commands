@@ -15,8 +15,49 @@
       
  #  Who you are logged in as
  
-       whoami      
+       whoami    
        
+ # how to create the directory  
+ 
+ 
+    mkdir directory name  (mkdir command space directory name)
+    
+ # hwo to create one txt file
+ 
+    echo "hi hello" > pandi.txt
+    touch filename
+    cat > filename (cntl+D)to finish
+    vim filename (with editor)
+    
+ # how to remove the file name
+ 
+     rm filename
+     
+ # how to remove the directory 
+ 
+      rm -r directoryname
+      rm -rf directory name (forcefully)
+      
+ # how to copy the file to file
+ 
+      cp file1 file2 (file1 space file2)
+      
+ # how to copy the diectory  
+ 
+    cp -r sourcedirectory  destination
+    
+ # how to rename the file 
+ 
+    mv source filenme  new file name
+    
+    
+ # how to moving the file  
+  
+    mv filename destinatior
+    
+ # how to view or read the file
+ 
+     cat filename 
        
  #  how to add user in ubuntu
 
@@ -31,14 +72,14 @@
  
      useradd -c "pandi sana" -m pandi
      
- # Add the john account to the sales group
+ # Add the pandi account to the sales group
  
-     usermod -aG sales john  
+     usermod -aG sales pandi 
        
       
  # Find your linux os name and release number in ubuntu
  
-    cat/etc/*release
+    cat/etc/*release    lsb_release -a
       
  #  Display Linux system information
  
@@ -114,6 +155,10 @@
   # how to give sudo rights privilages on new user
   
          usermod -aG sudo username
+         
+  # how to check if user have sudo privillages yes/no
+  
+         sudo -l
 
 
   # Error solved
