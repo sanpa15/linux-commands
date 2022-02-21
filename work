@@ -144,13 +144,30 @@
              
   #  Display and manage the top processes 
   
-              top         
+              top 
+              
+  # Display your currently running processes
+              ps
+              ps -aux
+              
+  # Display all the currently running processes on the system.
+  
+              ps -ef           
+              
+  # Kill process with process ID of pid
+  
+            kill pid 
+            
+  # Start program in the background
+  
+           program & 
               
               
   # how to switch the one user to another user
   
   
         su - username
+       if should not  switching in passwordless users so you can change root user use sudo -i command then use su - username cammand
         
   # how to give sudo rights privilages on new user
   
@@ -159,7 +176,25 @@
   # how to check if user have sudo privillages yes/no
   
          sudo -l
-
+         
+  # File permissions 
+     
+      read = 4
+      write =2
+      excute =1
+    -rw-rw-r--  1 pand  pandi   500 Feb 21 19:00 san.txt
+    in this file first -rw is user permission if user have read & write permission
+                  second -rw is group permission if group have read and write
+                  third  r-- is others permission if others have only read permission
+                  
+                  1 =excute permission
+                  2 =write
+                  3 =write and excute
+                  4 =read
+                  5 =read and excute
+                  6 =read and write
+                  7 =read write and excute
+                  
 
   # Error solved
   
