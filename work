@@ -22,6 +22,20 @@
 
       sudo adduser pandi 
       
+ # Create a group named "test".
+ 
+       groupadd test
+       
+ # Create an account named pandi, with a comment of "pandi sana" and create the user's home directory.
+ 
+ 
+     useradd -c "pandi sana" -m pandi
+     
+ # Add the john account to the sales group
+ 
+     usermod -aG sales john  
+       
+      
  # Find your linux os name and release number in ubuntu
  
     cat/etc/*release
