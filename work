@@ -21,6 +21,8 @@
  
  
     mkdir directory name  (mkdir command space directory name)
+    mkdir dir1 di2 dir3 dirw4   create multiple directory
+    mkdir dir{1..9}           create 10 directories
     
  # hwo to create one txt file
  
@@ -28,16 +30,34 @@
     touch filename
     cat > filename (cntl+D)to finish
     vim filename (with editor)
+    touch file1 file2 file3  (create multiple files)
+    touch file{1..9}.txt      create 10 files
     
  # how to remove the file name
  
      rm filename
+     rm file1 file2 file3   (delete multiple files)
      
  # how to remove the directory 
  
       rm -r directoryname
       rm -rf directory name (forcefully)
+      rm -r dir1 dir2 dir3 ....(delete multiple directories)
       
+ # how to find the file size
+ 
+      du -sh filename
+      du -sh directory name 
+      stat file name
+ 
+ # how to set the date 
+ 
+    timedatectl
+     date   display the date
+     date +"%d-%m-%y" display date is 03-04-2022
+     date +"%d %b %y" display date is 03 apr 2022
+ 
+ 
  # how to copy the file to file
  
       cp file1 file2 (file1 space file2)
@@ -62,6 +82,20 @@
  #  how to add user in ubuntu
 
       sudo adduser pandi 
+      sudo useradd usernmae
+      
+ # how to set password in user
+ 
+      sudo passwd username 
+      
+ # how to remove the password for user
+ 
+      passwd -d username
+      
+ # how to verify the password changes
+ 
+     chage -l username
+     
       
  # Create a group named "test".
  
@@ -80,14 +114,19 @@
  # Find your linux os name and release number in ubuntu
  
     cat/etc/*release    lsb_release -a
-      
+         cat /etc/os-release
+         
  #  Display Linux system information
  
          uname -a
-
+         hostnamectl
+         
  #  Display kernel release information
  
          uname -r
+         uname -s kernel name
+         uname -o os name
+         uname -i hardware name
 
       
 #  show wich version released in ubuntu
@@ -97,12 +136,13 @@
  #  Show system host name
  
         hostname       
-        
+       
   
  #  Display all local IP addresses of the host.
  
        hostname - I    
-       
+       ip addr
+       ip a
        
   #  Show system reboot history 
   
@@ -111,11 +151,14 @@
             
   #  Display CPU information
   
+        lscpu
+          ncpu
         cat /proc/cpuinfo       
-        
+        dmidecode
   #  Display memory information
   
          cat /proc/meminfo  
+         dmidecode
          
   #  Display free and used memory ( -h for human readable, -m for MB, -g for GB.)
   
@@ -161,12 +204,20 @@
   # Start program in the background
   
            program & 
-              
-              
+         just type bg
+         
+  # start the program in foreground
+  
+      just type jobs command showing list of jobs
+      then tybe fg the jobs come from the display
+      then press ctl+z jobs stop then type bg the jobs backgroundly running
+      
+  
   # how to switch the one user to another user
   
   
         su - username
+        
        if should not  switching in passwordless users so you can change root user use sudo -i command then use su - username cammand
         
   # how to give sudo rights privilages on new user
