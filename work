@@ -23,6 +23,8 @@
     mkdir directory name  (mkdir command space directory name)
     mkdir dir1 di2 dir3 dirw4   create multiple directory
     mkdir dir{1..9}           create 10 directories
+    mkdir dir name-"$(date +"%d%m%y")" 
+    
     
  # hwo to create one txt file
  
